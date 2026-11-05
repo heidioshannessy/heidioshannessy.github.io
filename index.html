@@ -550,11 +550,9 @@
 <script>
 (function(){var f=document.getElementById('contactForm');if(!f)return;
 f.addEventListener('submit',function(e){e.preventDefault();
-var t="Hi Heidi, my name is "+f.name.value.trim()+" ("+f.email.value.trim()+").";
-var m=f.message.value.trim(); if(m) t+="
-
-"+m;
-window.open("https://wa.me/61409394465?text="+encodeURIComponent(t),"_blank");});})();
+var t='Hi Heidi, my name is '+f.name.value.trim()+' ('+f.email.value.trim()+').';
+var m=f.message.value.trim(); if(m) t+='\n\n'+m;
+window.open('https://wa.me/61409394465?text='+encodeURIComponent(t),'_blank');});})();
 </script>
 </body>
 </html>
